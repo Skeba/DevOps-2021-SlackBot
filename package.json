@@ -1,0 +1,9 @@
+{
+  "name": "Devops-Slackbot-yarn",
+  "version": "1.0.0",
+  "description": "Devops Slackbot",
+  "main": "index.js",
+  "repository": "https://github.com/Skeba/DevOps-2021-SlackBot.git",
+  "author": "Skeba <seba.lundgren@gmail.com>",
+  "license": "MIT"
+}
