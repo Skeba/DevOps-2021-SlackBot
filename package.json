@@ -7,9 +7,12 @@
   "author": "Skeba <seba.lundgren@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "jest": "^27.3.1"
+    "aws-sdk": "^2.1014.0",
+    "jest": "^27.3.1",
+    "yargs": "^17.2.1"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "message": "node message.js Food is ready to be served"
   }
 }
