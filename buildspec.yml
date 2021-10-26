@@ -35,8 +35,8 @@ phases:
       # - command
   build:
     commands:
-      # - command
-      # - command
+       - yarn install
+       - yarn test
   #post_build:
     #commands:
       # - command
