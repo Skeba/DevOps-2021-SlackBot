@@ -12,7 +12,7 @@ var params = {
   TopicArn: 'arn:aws:sns:us-east-1:572443860726:MyBotTopic'
 };
 
-/*
+
 // Create promise and SNS service object
 var publishTextPromise = new AWS.SNS({apiVersion: '2010-03-31'}).publish(params).promise();
 
@@ -25,4 +25,3 @@ publishTextPromise.then(
     function(err) {
     console.error(err, err.stack);
   });
-*/
