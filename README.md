@@ -2,4 +2,3 @@
 Slackbot project for DevOps 2021 course
 DevOps Slackbot project 2021.
 added yarn install
-test
