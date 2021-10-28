@@ -14,13 +14,13 @@ receiver.router.get("/", (_req, res) => {
   res.send("You can access this page without x-slack- headers!");
 });
 function rollDice() {
-  return 1 + Math.floor(Math.random()*6)
+  return 1 + Math.floor(Math.random()*20)
 }
 app.command("/knowledge", async ({ command, ack, say }) => {
     try {
       await ack();
       var dice = rollDice();
-      say("Yaaay! that command works!" + dice);
+      say("You roll a D20. Result: " + dice);
     } catch (error) {
         console.log("err")
       console.error(error);
