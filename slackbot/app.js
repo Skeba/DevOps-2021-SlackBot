@@ -16,7 +16,7 @@ receiver.router.get("/", (_req, res) => {
 function rollDice() {
   return 1 + Math.floor(Math.random()*20)
 }
-app.command("/knowledge", async ({ command, ack, say }) => {
+app.command("/roll", async ({ command, ack, say }) => {
     try {
       await ack();
       var dice = rollDice();
