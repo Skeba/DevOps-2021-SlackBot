@@ -13,9 +13,13 @@ app.event("app_mention", async ({}) => {});
 receiver.router.get("/", (_req, res) => {
   res.send("You can access this page without x-slack- headers!");
 });
+function rollDice() {
+  return 1 + Math.floor(Math.random()*6)
+}
 app.command("/knowledge", async ({ command, ack, say }) => {
     try {
       await ack();
+      rollDice()
       say("Yaaay! that command works!");
     } catch (error) {
         console.log("err")
