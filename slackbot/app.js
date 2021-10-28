@@ -19,8 +19,8 @@ function rollDice() {
 app.command("/knowledge", async ({ command, ack, say }) => {
     try {
       await ack();
-      rollDice()
-      say("Yaaay! that command works!");
+      var dice = rollDice();
+      say("Yaaay! that command works!" + dice);
     } catch (error) {
         console.log("err")
       console.error(error);
