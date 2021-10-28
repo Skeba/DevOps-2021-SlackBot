@@ -3,12 +3,12 @@ var AWS = require('aws-sdk');
 // Set region
 AWS.config.update({region: 'us-east-1'});
 
-var myArgs = process.argv[2];
-console.log('myArgs: ', myArgs);
+var myArgs = process.argv.slice(2);
+console.log('myArgs: ', myArgs.join(' '));
 
 // Create publish parameters
 var params = {
-  Message: myArgs[2], /* required */
+  Message: myArgs.join(' '), /* required */
   TopicArn: 'arn:aws:sns:us-east-1:572443860726:MyBotTopic'
 };
 
